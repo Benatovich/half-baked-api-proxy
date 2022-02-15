@@ -1,13 +1,14 @@
 import React from 'react';
-import { type } from 'superagent/lib/utils';
 
-export default function PokemonItem({ pokemon, type_1, generation_id, species_id }) {
+export default function PokemonItem({ pokemon, type_1, type_2, generation_id, species_id, url_image }) {
   return (
     <div className='pokemon-item'>
-      <h3 className='name'>{pokemon}</h3>
-      <p className='type'>{type_1}</p>
-      <p className='generation'>Generation {generation_id}</p>
-      <p className='id-number'>{species_id}</p>
+      <h3 className='name'>Name: {pokemon}</h3>
+      <img className='image' src={url_image} />
+      <p className='type'>Type 1: {type_1}</p>
+      <p className='type'>Type 2: {type_2}</p>
+      <p className='generation'>Generation: {generation_id}</p>
+      <p className='id-number'>Number: {species_id}</p>
     </div>
   );
 }
