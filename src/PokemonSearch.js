@@ -22,6 +22,8 @@ export default function PokemonSearch() {
     const json = await response.json();
     console.log(json);
     setPokemon(json.results);
+
+    setLoading(false);
   }
       
   return (
