@@ -11,6 +11,8 @@ exports.handler = async (event) => {
     const response = await fetch(`https://pokedex-alchemy.herokuapp.com/api/pokedex?pokemon=${event.queryStringParameters.search}`);
 
     const json = await response.json();
+    console.log(json, 'json');
+    console.log(response, 'response');
     
     // consult the pokedex docs 
     // https://pokedex-alchemy.herokuapp.com/
