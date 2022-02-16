@@ -8,9 +8,9 @@ exports.handler = async (event) => {
     // here is an example from the netlify docs:
     // https://functions.netlify.com/playground/#hello%2C-%7Bname%7D 
     const response = await fetch(`https://api.yelp.com/v3/businesses/search?location=${event.queryStringParameters.search}`, {
-      headers : {
-        Authorization: `Bearer ${process.env.YELP_KEY}`
-      }
+      headers: {
+        Authorization: `Bearer ${process.env.YELP_KEY}`,
+      },
     });
 
     // consult the yelp docs to figure out how to use a city, state, and country to make a request for businesses
