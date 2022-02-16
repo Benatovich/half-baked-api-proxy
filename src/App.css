@@ -46,6 +46,9 @@
   }
 }
 
+.poke-item img, .yelp-item img {
+  width: 250px;
+}
 
 section {
   width: 30%;
@@ -54,14 +57,20 @@ section {
 
 .yelp {
   background-color: lightgreen;
+  height: fit-content;
+  width: 260px;
 }
 
 .weather {
   background-color: lightblue;
+  height: fit-content;
+  width: 260px;
 }
 
 .pokemon {
   background-color: pink;
+  height: max-content;
+  width: 260px;
 }
 
 section li {

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function PokemonItem({ pokemon, type_1, type_2, generation_id, species_id, url_image }) {
   return (
-    <div className='pokemon-item'>
+    <div className='poke-item'>
       <h3 className='name'>Name: {pokemon}</h3>
       <img className='image' src={url_image} />
       <p className='type'>Type 1: {type_1}</p>

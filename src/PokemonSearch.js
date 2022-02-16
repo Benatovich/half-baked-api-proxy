@@ -20,7 +20,7 @@ export default function PokemonSearch() {
 
         // put the jsonified data in state and set the loading state to false
     const json = await response.json();
-    console.log(json);
+    // console.log(json);
     setPokemon(json.results);
 
     setLoading(false);
