@@ -9,6 +9,7 @@ export default function PokemonItem({ pokemon, type_1, type_2, generation_id, sp
       <p className='type'>Type 2: {type_2}</p>
       <p className='generation'>Generation: {generation_id}</p>
       <p className='id-number'>Number: {species_id}</p>
+      <hr></hr>
     </div>
   );
 }

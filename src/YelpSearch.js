@@ -28,6 +28,7 @@ export default function YelpSearch() {
       {/* make the fetch on submit */}
       <form onSubmit={handleYelpSubmit}>
         Search yelp for a city
+        <br></br>
         {/* add inputs/labels for city name, state, and country, using all the things we need with react forms. Don't forget to use the value property to sync these up with the default values in react state */}
         <input onChange={e => setSearch(e.target.value)} value={search} />
         <button>Search yelp</button>

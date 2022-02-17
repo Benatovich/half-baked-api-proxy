@@ -46,8 +46,12 @@
   }
 }
 
-.poke-item img, .yelp-item img {
+.poke-item img {
   width: 250px;
+}
+
+.business-item img {
+  width: 390px;
 }
 
 section {
@@ -58,7 +62,7 @@ section {
 .yelp {
   background-color: lightgreen;
   height: fit-content;
-  width: 260px;
+  width: 400px;
 }
 
 .weather {
